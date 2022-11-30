@@ -38,7 +38,8 @@ public void setup()
 
     //You may watch the video by Muthukumaran on how to write exceptions in Course 3: Testing and Version control: Optional content
     @Test
-    public void searching_for_non_existing_restaurant_should_throw_exception() throws restaurantNotFoundException {
+    public void searching_for_non_existing_restaurant_should_throw_exception() throws restaurantNotFoundException
+    {
         //WRITE UNIT TEST CASE HERE
         restaurant_adding_for_testing();
         assertEquals("Amelie's cafe",service.findRestaurantByName("Amelie's cafe").getName());
@@ -50,7 +51,8 @@ public void setup()
 
     //>>>>>>>>>>>>>>>>>>>>>>ADMIN: ADDING & REMOVING RESTAURANTS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     @Test
-    public void remove_restaurant_should_reduce_list_of_restaurants_size_by_1() throws restaurantNotFoundException {
+    public void remove_restaurant_should_reduce_list_of_restaurants_size_by_1() throws restaurantNotFoundException
+    {
       /*  LocalTime openingTime = LocalTime.parse("10:30:00");
         LocalTime closingTime = LocalTime.parse("22:00:00");
         restaurant = service.addRestaurant("Amelie's cafe","Chennai",openingTime,closingTime);
@@ -63,7 +65,8 @@ public void setup()
     }
 
     @Test
-    public void removing_restaurant_that_does_not_exist_should_throw_exception() throws restaurantNotFoundException {
+    public void removing_restaurant_that_does_not_exist_should_throw_exception() throws restaurantNotFoundException
+    {
        /* LocalTime openingTime = LocalTime.parse("10:30:00");
         LocalTime closingTime = LocalTime.parse("22:00:00");
         restaurant = service.addRestaurant("Amelie's cafe","Chennai",openingTime,closingTime);
@@ -74,7 +77,8 @@ public void setup()
     }
 
     @Test
-    public void add_restaurant_should_increase_list_of_restaurants_size_by_1(){
+    public void add_restaurant_should_increase_list_of_restaurants_size_by_1()
+    {
         /*/LocalTime openingTime = LocalTime.parse("10:30:00");
         LocalTime closingTime = LocalTime.parse("22:00:00");
         restaurant = service.addRestaurant("Amelie's cafe","Chennai",openingTime,closingTime);
