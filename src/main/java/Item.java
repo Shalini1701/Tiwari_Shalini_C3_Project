@@ -17,7 +17,8 @@ public class Item {
                 + "\n"
                 ;
     }
-    public int getPrice() {
+    public int getPrice()
+    {
         return price;
     }
 }
